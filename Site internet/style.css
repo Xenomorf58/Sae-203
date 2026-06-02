@@ -1,0 +1,15 @@
+
+body::before { /*Test pour le fond*/
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("./img/stars.jpg") center/cover no-repeat;
+    filter: blur(3px);
+    opacity: 0.95;
+	filter : brightness(0.6);
+    z-index: -1;
+}
+
+h1, p, cite, h2, ul{
+    color: white;
+}
