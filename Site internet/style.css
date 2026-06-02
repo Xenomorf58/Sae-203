@@ -12,3 +12,12 @@ body::before { /*Test pour le fond*/
 h1, p, cite, h2, ul{
     color: white;
 }
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--rayon);
+    margin-bottom: 0.8rem;
+    object-fit: cover;
+    max-height: 180px;
+}
