@@ -1,4 +1,3 @@
-
 body::before { /*Test pour le fond*/
     content: "";
     position: fixed;
