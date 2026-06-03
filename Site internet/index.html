@@ -21,31 +21,37 @@
                     <a href="./Formulaire_de_demande.html" class="link" title="Lien vers la page ...">Demander un film</a>
                 </nav>-->
 
-            <div class="container-fluid bg-white fixed-top"><!-- Conteneur --><!-- Voir sujet -->
-                <nav class="navbar p-3 navbar-expand-lg" data-bs-theme="navbar-light"><!-- Menu de navigation -->
-                <!-- Marque (brand) du menu --><!-- Voir sujet -->
-                <a class="navbar link" href="./index.html" title="Lien vers la page d'Accueil">Accueil</a>       
+            
+            <nav class="navbar p-3 navbar-expand-lg" data-bs-theme="navbar-light"><!-- Menu de navigation -->
+                <div class="container-fluid bg-white fixed-top"><!-- Conteneur -->
+                <a class="navbar-brand link" href="./index.html" title="Lien vers la page d'Accueil">Accueil</a>       
+                
+                <form class="d-flex" role="search"><!--Barre de recherche et boutton submit-->
+                    <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"><!-- Bouton de bascule (toggler) -->
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="menu"><!-- Contenu du menu pouvant se réduire (collapse) -->
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0"><!-- Barre de navigation (nav)-->
-                        <li class="nav-item"><!-- Voir sujet -->
-                            <a class="active" href="./index_sujet - Modifs.html"><i class="bi bi-house me-1"></i>Accueil</a><!-- Voir sujet -->
+                        <li class="nav-item">
+                            <a class="active" href="./index.html"><i class="bi bi-house me-1"></i>Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="disabled" href="#"><i class="bi bi-info-square me-1"></i>À propos de Ukulélé & Friends</a><!-- Voir sujet -->
+                            <a class="disabled" href="#"><i class="bi bi-info-square me-1"></i>À propos de Ukulélé & Friends</a>
                         </li>
-                        <li class="nav-item"><!-- Voir sujet -->
-                            <a class="disabled" href="#"><i class="bi bi-images me-1"></i>Galerie d'images</a><!-- Voir sujet -->
+                        <li class="nav-item">
+                            <a class="disabled" href="#"><i class="bi bi-images me-1"></i>Galerie d'images</a>
                         </li>
                     </ul>
                 </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </header>
 
-        <div class="container-xxl bd-gutter mt-5 pt-5 my-md-4 bd-layout" id="trueBody">
+        <div class="container-xxl bd-gutter mt-5 my-md-4 bd-layout" id="trueBody">
             <h1>Bienvenue sur notre site !</h1><!--Titre principal de la page d'accueil-->
 
             <figure>
@@ -68,7 +74,7 @@
                 </ul>
 
                         <!-- Création d'un carrousel-->
-                <div class="col-lg-4 d-block">
+                <div class="col-lg d-block ">
                     <div class="carousel slide carousel-fade" id="carouselPortrait" data-bs-theme="carousel-dark" data-bs-ride="carousel" data-bs-interval="3000"><!-- Début du carroussel --><!-- Voir sujet -->
                         <div class="carousel-indicators"><!-- Indicateurs de carrousel -->
                             <button type="button" data-bs-target="#carouselPortrait" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Portrait 1"></button>
