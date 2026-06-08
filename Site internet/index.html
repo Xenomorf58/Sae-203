@@ -33,8 +33,9 @@
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
 
-                        <!-- Menu déroulant des autres pages-->
-                    
+                    <!-- Menu déroulant des autres pages-->
+                    <!--Manquera que la mise en page, le code est bon-->
+                    <div id="togglerMenu">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"><!-- Bouton de bascule (toggler) -->
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -52,31 +53,37 @@
                                 </li>
                             </ul>
                         </div>
-                    <!--</div> Toggler menu-->
+                    </div>
+                    <!--Fin Toggler menu-->
 
-                        <!--Menu déroulant des Filtres <div id="togglerFiltres"> id="filtres"-->
-                    
+
+                    <!--Menu déroulant des Filtres -->
+
+                    <div class="navbar-nav mt-2 mb-2"><!--Toggler des filtres : id="togglerFiltres"-->
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#filtres"><!-- Bouton de bascule (toggler) -->
-                            <span class="navbar-toggler-icon"></span>
+                            <span class="bi bi-toggles" >Filtres</span>
                         </button>
 
                         <div class="collapse navbar-collapse" id="filtres">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                                <label class="form-check-label" for="checkDefault">
-                                    Default checkbox
+                                <input class="form-check-input" type="checkbox" value="" id="ToutChecked" checked>
+                                <label class="form-check-label" for="ToutChecked">
+                                    Tout
                                 </label>
                             </div>
 
+                            <h7 class="pt-3 fw-bold">Lieux :</h7>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
-                                <label class="form-check-label" for="checkChecked">
-                                    Checked checkbox
+                                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                <label class="form-check-label" for="checkDefault">
+                                    Parc
                                 </label>
                             </div>
                         </div>
-                        
-                    <!--</div> Fin Toggler filtres-->
+                    </div>
+
+                    <!-- Fin Toggler filtres-->
+
 
                 </div><!--Fin du conteneur lié à navbar-->
             </nav>
