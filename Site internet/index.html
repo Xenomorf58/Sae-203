@@ -25,82 +25,84 @@
 
             
             <nav class="navbar p-3 navbar-expand-lg" data-bs-theme="navbar-light"><!-- Menu de navigation -->
-                <div class="container-fluid bg-white fixed-top"><!-- Conteneur -->
-                    <a class="navbar-brand link" href="./index.html" title="Lien vers la page d'Accueil">Accueil</a>       
-                
-                    <form class="d-flex" role="search"><!--Barre de recherche et boutton submit-->
-                        <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search"/>
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                <div class="container-fluid bg-white fixed-top justify-content-evenly"><!-- Conteneur -->
+                    
+                            <a class="navbar-brand link" href="./index.html" title="Lien vers la page d'Accueil">Accueil</a>       
+
+                            <form class="d-flex" role="search"><!--Barre de recherche et boutton submit-->
+                                <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search"/>
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
 
                     <!-- Menu déroulant des autres pages-->
                     <!--Manquera que la mise en page, le code est bon-->
-                    <div class="" id="togglerMenu">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"><!-- Bouton de bascule (toggler) -->
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                            <div class="" id="togglerMenu">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"><!-- Bouton de bascule (toggler) -->
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
 
-                        <div class="collapse navbar-collapse" id="menu"><!-- Contenu du menu pouvant se réduire (collapse) -->
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0"><!-- Barre de navigation (nav)-->
-                                <li class="nav-item">
-                                    <a class="active me-4" href="./index.html"><i class="bi bi-house me-1"></i>Accueil</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="active  me-4" href="./Création_de_soirée.html"><i class="bi bi-info-square me-1"></i>Créer une soirée</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="active  me-4" href="./Films.html"><i class="bi bi-film me-1"></i>Films</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                                <div class="collapse navbar-collapse" id="menu"><!-- Contenu du menu pouvant se réduire (collapse) -->
+                                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0"><!-- Barre de navigation (nav)-->
+                                        <li class="nav-item">
+                                            <a class="active me-4" href="./index.html"><i class="bi bi-house me-1"></i>Accueil</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="active  me-4" href="./Création_de_soirée.html"><i class="bi bi-info-square me-1"></i>Créer une soirée</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="active  me-4" href="./Films.html"><i class="bi bi-film me-1"></i>Films</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                     <!--Fin Toggler menu-->
 
-
                     <!--Menu déroulant des Filtres en Offset-->
-
-                    <div class="navbar-nav mt-2 mb-2"><!--Toggler des filtres : id="togglerFiltres"-->
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#filtres" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"><!-- Bouton de bascule (toggler) -->
-                            <span class="bi bi-toggles">Filtres</span>
-                        </button>
-
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="filtres">
-                            <div class="ms-3">
-                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Filtres</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
+                            <div class=""><!--Toggler des filtres : id="togglerFiltres"-->
+                                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#filtres" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"><!-- Bouton de bascule (toggler) -->
+                                    <span class="bi bi-toggles">Filtres</span>
+                                </button>
+                    
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="filtres">
+                                    <div class="offcanvas-header px-4 pb-2">
+                                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Filtres</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#filtres" aria-label="Close"></button>
+                                    </div>
                             
-                            <div>
-                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3  text-black">
-                                    <li>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="ToutChecked" checked>
-                                            <label class="form-check-label" for="ToutChecked">
-                                                Tout
-                                            </label>
-                                        </div>
-                                    </li>
+                                    <div class="ms-3">
+                                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3  text-black">
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="ToutChecked" checked>
+                                                    <label class="form-check-label" for="#ToutChecked">
+                                                        Tout
+                                                    </label>
+                                                </div>
+                                            </li>
 
-                                    <li>
-                                        <h7 class="pt-3 fw-bold">Lieux :</h7>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                                            <label class="form-check-label" for="checkDefault">
-                                                Parc
-                                            </label>
-                                        </div>
-                                    </li>
+                                            <li class="mt-3">
+                                                <h7 class="fw-bold">Lieux :</h7>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                                    <label class="form-check-label" for="#checkDefault">
+                                                        Parc
+                                                    </label>
+                                                </div>
+                                            </li>
 
-                                </ul>
+                                        </ul>
+                                    </div>
+
+                                </div>
                             </div>
-
-                        </div>
-                    </div>
-
                     <!-- Fin Toggler filtres-->
-
+                    
+                </div>
                 <!--</div> Fin du conteneur lié à navbar-->
             </nav>
+
+
+
         </header>
 
         <div class="container-xxl bd-gutter mt-5 my-md-4 bd-layout" id="trueBody">
