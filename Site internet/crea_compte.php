@@ -5,15 +5,15 @@ $username_db = "root";
 $password_db = "";
 $dbname = "test";
 
-// Connexion
+// Partie connexion
 $conn = mysqli_connect($servername, $username_db, $password_db, $dbname);
 
-// Vérification
+// Partie vérif
 if (!$conn) {
     die("C'est la mierda : " . mysqli_connect_error());
 }
 
-// Récupération des données du formulaire
+// Récup données formulaire
 $username = $_POST['new_username'];
 $password = $_POST['new_password'];
 $password2 = sha1($password);
@@ -22,7 +22,7 @@ $password2 = sha1($password);
 $sql = "INSERT INTO comptes (username, password)
         VALUES ('$username', '$password2')";
 
-// Exécution
+// Exécution SQL
 if (mysqli_query($conn, $sql)) {
     echo "Le compte a été créé avec succès.";
     echo "Vous allez être redirigé vers la page de connexion, veuillez patienter.";
@@ -35,7 +35,7 @@ if (mysqli_query($conn, $sql)) {
     echo "Il y a eu un problème, veuillez réessayer.";
 }
 
-// Fermeture de la connexion
+// Fin
 mysqli_close($conn);
 
 ?>
