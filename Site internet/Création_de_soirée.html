@@ -119,7 +119,39 @@
 
     </header>
         
+        <form action="crea_soiree.php" method="post">
+            <br>
+            <h4><strong>Formulaire de création de soirée</strong></h4>
+            <label for="username">Nom de la soirée :</label>
+            <input type="text" id="username" name="nom_soiree">
+            <br>
+            <hr>
 
+            <input type="checkbox" name="film1">Star wars<br>
+            <input type="checkbox" name="film2">TADC<br>
+            <input type="checkbox" name="film3">Hypnotic<br><br>
+
+            <hr>
+
+            <input type="checkbox" name="lieu1">Pau<br>
+            <input type="checkbox" name="lieu2">Tarbes<br>
+            <input type="checkbox" name="lieu3">Bordeaux<br><br>
+
+            <hr>
+
+            <label for="date">Date de la soirée :</label>
+            <input type="date" id="date" name="date">
+
+            <hr>
+
+            <input type="radio" name="theme">Action<br>
+            <input type="radio" name="theme">Fantastique<br>
+            <input type="radio" name="theme">Romantique<br><br>
+
+
+            <button type="submit" value="Submit">Envoyer</button>
+        </form>
+        
         <footer class="container-fluid bg-white fixed-bottom"><!--¨Pied de page-->
             <div class="d-flex justify-content-evenly"><!-- Pour que se soit bien réparti -->
                 <a class="p-1 pt-2" href="index.html"><img src="#" alt="Logo de notre site" class="img-fluid"></a><!--Notre logo, cliquable pour revenir au début de la page d'accueil-->
