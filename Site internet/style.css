@@ -117,10 +117,12 @@ figure {
 }
 
 footer.footer .active {
+
     background-image: url("https://i.pinimg.com/736x/fd/cd/2d/fdcd2d93de5c539ff196c34991a457ca.jpg");
     background-size: cover;
     background-position: center;
     color: white;
+
 }
 
 footer.footer .btn:hover {
@@ -281,3 +283,71 @@ footer i {
     transform: scale(1.05);
 }
 
+
+/* ===== FIN SECTION FORMULAIRE ===== */
+
+
+/* ===== SECTION MENTIONS LEGALES ===== */
+
+.mentleg {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 0;
+
+    box-sizing: border-box;
+
+}
+
+.mention-legales {
+
+    width: 75%;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 2rem ;
+
+    border-radius: 2rem ;
+
+    background: rgba(30, 30, 50, 0.95);
+    border-color: #00FFFF;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), inset 0 0 20px rgba(0, 255, 255, 0.1);
+
+}
+
+.mention-item {
+
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid rgba(0, 255, 255, 0.595);
+
+}
+
+.mention-item strong {
+
+    color: #00FFFF;
+
+}
+
+h2 {
+
+    margin-bottom: 50px ;
+
+}
+
+h3 {
+
+    margin-bottom: 30px;
+
+}
