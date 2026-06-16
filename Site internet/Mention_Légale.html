@@ -14,8 +14,10 @@
 <!--https://icons.getbootstrap.com = Icones Bootstrap-->
 
     <body>
-    <header>
-        <!-- <nav>   Lien entre les différentes pages
+
+
+        <header>
+            <!-- <nav>   Lien entre les différentes pages
                     <a href="index.html" class="link" title="Lien vers la page d'Accueil">Accueil</a>
                     <a href="./Création_de_soirée.html" class="link" title="Lien vers la page ...">Créer un événement</a>
                     <a href="./Films.html" class="link" title="Lien vers la page ...">Nos films</a>
@@ -23,100 +25,150 @@
                 </nav>-->
 
 
-        <nav class="navbar p-4 navbar-expand-lg" data-bs-theme="navbar-light"><!-- Menu de navigation -->
+            <nav class="navbar p-4 navbar-expand-lg" data-bs-theme="navbar-light"><!-- Menu de navigation -->
 
-            <div class="container-fluid bg-dark fixed-top justify-content-evenly pt-2 pb-2"><!-- Conteneur -->
+                <div class="container-fluid bg-dark fixed-top justify-content-evenly pt-2 pb-2"><!-- Conteneur -->
 
-                <a class="navbar-brand link text-white" href="./index.html" title="Lien vers la page d'Accueil">Accueil</a>
+                    <a class="navbar-brand link text-white" href="./index.html" title="Lien vers la page d'Accueil">Accueil</a>
 
-                <form class="d-flex" role="search"><!--Barre de recherche et boutton submit-->
+                    <form class="d-flex" role="search"><!--Barre de recherche et boutton submit-->
 
-                    <input class="form-control me-2 h-auto w-100" type="search" placeholder="Rechercher" aria-label="Search" />
-                    <button class="btn border border-1 border-dark Search" type="submit rounded-2">Search</button>
+                        <input class="form-control me-2 h-auto w-100" type="search" placeholder="Rechercher" aria-label="Search" />
+                        <button class="btn border border-1 border-dark Search" type="submit rounded-2">Search</button>
 
-                </form>
+                    </form>
 
-                <!-- Menu déroulant des autres pages-->
-                <!--Manquera que la mise en page, le code est bon-->
-                <div class="" id="togglerMenu">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#menu"><!-- Bouton de bascule (toggler) -->
-                        <span class="navbar-toggler-icon"></span>
+                        <!-- Menu déroulant des autres pages-->
+                        <!--Manquera que la mise en page, le code est bon-->
+                    <div class="" id="togglerMenu">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#menu"><!-- Bouton de bascule (toggler) -->
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="menu">
+                            <!-- Contenu du menu pouvant se réduire (collapse) -->
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0"><!-- Barre de navigation (nav)-->
+                                <li class="nav-item">
+                                    <a class="btn border border-1 border-dark active me-5" href="./index.html"><i
+                                        class="bi bi-house me-1"></i>Accueil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn border border-1 border-dark active  me-5"
+                                        href="./Création_de_soirée.html"><i class="bi bi-info-square me-1"></i>Créer une
+                                        soirée</a>
+                                </li>
+                            </ul>
+                        </div>   
+                    </div>
+                        <!--Fin Toggler menu-->
+
+                        <!--Menu déroulant des Filtres en Offset-->
+                    <button class="btn btn-outline-dark filtres" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasFiltres"
+                        aria-controls="offcanvasFiltres"><!-- Bouton de bascule (toggler) -->
+                        <span class="bi bi-toggles">Filtres</span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="menu">
-                        <!-- Contenu du menu pouvant se réduire (collapse) -->
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0"><!-- Barre de navigation (nav)-->
-                            <li class="nav-item">
-                                <a class="btn border border-1 border-dark active me-5" href="./index.html"><i
-                                        class="bi bi-house me-1"></i>Accueil</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn border border-1 border-dark active  me-5"
-                                    href="./Création_de_soirée.html"><i class="bi bi-info-square me-1"></i>Créer une
-                                    soirée</a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-                <!--Fin Toggler menu-->
 
-                <!--Menu déroulant des Filtres en Offset-->
-                <button class="btn btn-outline-dark filtres" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasFiltres"
-                    aria-controls="offcanvasFiltres"><!-- Bouton de bascule (toggler) -->
-                    <span class="bi bi-toggles">Filtres</span>
-                </button>
+            </nav>
 
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFiltres"
+                aria-labelledby="offcanvasFiltresLabel">
+
+                <div class="offcanvas-header">
+
+                    <h5 class="offcanvas-title" id="offcanvasFiltresLabel">Filtres</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+
+                </div>
+
+                <div class="offcanvas-body">
+
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3  text-black">
+                        <li>
+                            <div class="form-check">
+
+                                <input class="form-check-input" type="checkbox" value="" id="ToutChecked" checked>
+
+                                <label class="form-check-label" for="#ToutChecked">
+                                    Tout
+                                </label>
+
+                            </div>
+                        </li>
+                        <li class="mt-3">
+
+                            <h7 class="fw-bold">Lieux :</h7>
+
+                            <div class="form-check">
+
+                                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+
+                                <label class="form-check-label" for="#checkDefault">
+                                    Parc
+                                </label>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-        </nav>
+        </header>
 
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFiltres"
-            aria-labelledby="offcanvasFiltresLabel">
-
-            <div class="offcanvas-header">
-
-                <h5 class="offcanvas-title" id="offcanvasFiltresLabel">Filtres</h5>
-
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
-
-            </div>
-
-            <div class="offcanvas-body">
-
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3  text-black">
-                    <li>
-                        <div class="form-check">
-
-                            <input class="form-check-input" type="checkbox" value="" id="ToutChecked" checked>
-
-                            <label class="form-check-label" for="#ToutChecked">
-                                Tout
-                            </label>
-
-                        </div>
-                    </li>
-                    <li class="mt-3">
-
-                        <h7 class="fw-bold">Lieux :</h7>
-
-                        <div class="form-check">
-
-                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-
-                            <label class="form-check-label" for="#checkDefault">
-                                Parc
-                            </label>
-
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        <div class="" id="editeur">
+            <h4>Editeur du site</h4>
+            <p><strong>Responsable de la publication : </strong>ACUNA Livia</p>
+                </br>
+            <p><strong>Responsable de la communication : </strong>BONTEMS BAYARD Côme</p>
+                </br>
+            <p><strong>Création et mie à jour des contenus : </strong>GONZALEZ BLONDELOT Ambre</p>
+                </br>
+            <p><strong>Réalisation : </strong>Groupe 2 de la SAE 203</p>
+                </br>
+            <p><strong>Création Graphique : </strong>TORRES Maxime</p>
         </div>
 
-    </header>
-    
+        <div class="" id="gestion">
+            <h4>Conception, réalisation, design, administration technique, gestion du site</h4>
+            <p><strong>Responsable de la conception numérique : </strong>CLAVERIE Yon</p>
+                </br>
+            <a href="https://www.iut-tarbes.fr/">IUT de Tarbes</a>
+                </br>
+            <p>1 rue Lautréamont, 65 000 Tarbes</p>
+        </div>
+
+        <div class="" id="reproduction">
+            <p>
+                Toutes les oeuvres de notre site sont soumises à des droits d'auteur et doivent</br>
+                être soumises à une demande avant toute utilisation.
+            </p>
+        </div>
+
+        <div class="" id="données">
+            <p>
+                Le site ne récupère aucune donnée personnelle avec ou sans votre accord, </br>
+                il n'a donc pas besoin de faire une demande de cookie pour accéder au contenu </br>
+                de la page.
+            </p>
+        </div>
+
+        <div class="" id="responsabilité">
+            <p>
+                Les liens hypertextes menant vers des contenus de site externes n'engagent </br>
+                en rien la responsabilité du Groupe de la SAE 203.
+            </p>
+        </div>
+
+        <div class="" id="prop_intellect">
+            <p>
+                Le site CinéStar à été créé avec l'application Visual Studio Code.</br>
+                Le nom de domaine CinéStar est un nom déposé, il est interdit de le réutiliser sans notre accord.
+            </p>
+        </div>
 
         <footer class="container-fluid bg-white fixed-bottom"><!--¨Pied de page-->
             <div class="d-flex justify-content-evenly"><!-- Pour que se soit bien réparti -->
