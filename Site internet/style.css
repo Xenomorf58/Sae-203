@@ -1,4 +1,5 @@
-body::before { /*Test pour le fond*/
+body::before {
+    /*Test pour le fond*/
 
     content: "";
     position: fixed;
@@ -6,14 +7,18 @@ body::before { /*Test pour le fond*/
     background: url("./img/stars.jpg") center/cover no-repeat;
     filter: blur(3px);
     opacity: 0.95;
-	filter : brightness(0.6);
+    filter: brightness(0.6);
     z-index: -1;
 
 }
 
 /*----*/
 
-h1, p, cite, h2, ul{
+h1,
+p,
+cite,
+h2,
+ul {
 
     color: white;
 
@@ -47,7 +52,7 @@ figure {
 }
 
 .text-layout {
-    
+
     padding: 1rem 0;
 
 }
@@ -94,7 +99,10 @@ figure {
 }
 
 
-.collapse a, .Search, .filtres {             /* Fond + couleur texte blanc */
+.collapse a,
+.Search,
+.filtres {
+    /* Fond + couleur texte blanc */
 
     background-image: url("https://i.pinimg.com/736x/fd/cd/2d/fdcd2d93de5c539ff196c34991a457ca.jpg");
     background-size: cover;
@@ -102,14 +110,16 @@ figure {
 
 }
 
-.btn {                                      /* Animation de zoom */
+.btn {
+    /* Animation de zoom */
 
     transition: transform 0.2s ease-in-out;
     color: white
-
 }
 
-.btn:hover, footer a:hover {                                /* Animation de zoom au survol*/
+.btn:hover,
+footer a:hover {
+    /* Animation de zoom au survol*/
 
     transform: scale(1.05);
     color: white;
@@ -147,7 +157,7 @@ footer i {
 
 .formulaire h2 {
 
-    padding : 40px;
+    padding: 40px;
 
 }
 
@@ -165,7 +175,7 @@ footer i {
     margin-top: 4%;
 
     border-radius: 15px;
-    
+
     backdrop-filter: blur(10px);
 
 }
@@ -184,19 +194,19 @@ footer i {
     font-weight: 500;
 
     font-size: 1rem;
-    
+
 }
 
 /* Inputs et textarea - Style général */
 .formulaire input[type="text"],
 .formulaire input[type="role"],
-.formulaire input[type="email"]{
+.formulaire input[type="email"] {
 
     width: 100%;
 
     padding: 12px;
     padding-right: 300px;
-    
+
     background: rgba(30, 30, 50, 0.8);
     border: 2px solid transparent;
     border-radius: 15px;
@@ -249,7 +259,7 @@ footer i {
     margin-bottom: 25px;
     resize: vertical;
     min-height: 80px;
-    
+
 }
 
 /* Bouton Envoyer */
@@ -258,7 +268,7 @@ footer i {
     background: rgba(30, 30, 50, 0.5);
 
     color: white;
-    
+
     border: 1px solid rgba(53, 88, 78, 0.5);
 
     padding: 12px 40px;
@@ -271,11 +281,11 @@ footer i {
     cursor: pointer;
     transition: all 0.3s ease;
     width: 100%;
-    
+
 }
 
 .formulaire button:hover {
-    
+
     background: rgba(30, 30, 50, 0.95);
     border-color: #00FFFF;
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), inset 0 0 10px rgba(0, 255, 255, 0.1);
@@ -315,9 +325,9 @@ footer i {
 
     margin: 0 auto;
 
-    padding: 2rem ;
+    padding: 2rem;
 
-    border-radius: 2rem ;
+    border-radius: 2rem;
 
     background: rgba(30, 30, 50, 0.95);
     border-color: #00FFFF;
@@ -327,10 +337,10 @@ footer i {
 
 .mention-item {
 
-  margin-bottom: 30px;
-  padding-bottom: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
 
-  border-bottom: 1px solid rgba(0, 255, 255, 0.595);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.595);
 
 }
 
@@ -342,12 +352,139 @@ footer i {
 
 h2 {
 
-    margin-bottom: 50px ;
+    margin-bottom: 50px;
 
 }
 
 h3 {
 
     margin-bottom: 30px;
+
+}
+
+/* ===== SECTION MENTIONS LEGALES ===== */
+
+/* ===== SECTION CREATION DE SOIREE ===== */
+
+#soirée {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 0;
+
+    box-sizing: border-box;
+
+    color: white;
+
+    line-height: 1.8;
+}
+
+.css {
+
+    width: 75%;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 2rem;
+
+    border-radius: 2rem;
+
+    background: rgba(30, 30, 50, 0.95);
+    border-color: #00FFFF;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), inset 0 0 20px rgba(0, 255, 255, 0.1);
+
+}
+
+#soirée #inputsoirée {
+
+    border-radius: 5px;
+    background: rgba(30, 30, 50, 0.95);
+    border: 2px solid white;
+
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: white;
+
+}
+
+#soirée #inputsoirée:focus {
+
+    border-radius: 5px;
+    background: rgba(30, 30, 50, 0.95);
+    border-color: #00FFFF;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), inset 0 0 20px rgba(0, 255, 255, 0.1);
+
+}
+
+#soirée h3 {
+
+    padding-bottom: 20px;
+
+}
+
+
+
+#soirée input[type="checkbox"],
+#soirée input[type="radio"] {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    vertical-align: middle;
+
+    margin: 0.2rem 0.8rem 0.3rem 0.6rem;
+    margin-right: 0.4rem;
+
+    accent-color: #00FFFF;
+
+    transform: scale(1.05);
+}
+
+#soirée input[type="checkbox"]+br,
+#soirée input[type="radio"]+br {
+    display: none;
+}
+
+
+#soirée button {
+
+    background: rgba(30, 30, 50, 0.5);
+
+    color: white;
+
+    border: 1px solid rgba(53, 88, 78, 0.5);
+
+    padding: 12px 40px;
+    border-radius: 20px;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 70%;
+
+
+}
+
+#soirée button:hover {
+
+    background: rgba(30, 30, 50, 0.95);
+    border-color: #00FFFF;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), inset 0 0 10px rgba(0, 255, 255, 0.1);
+
+    transform: scale(1.05);
 
 }
