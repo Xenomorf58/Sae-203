@@ -36,6 +36,22 @@ if (isset($_POST['film3'])) {
     $films[] = $_POST['film3'];
 }
 
+if (isset($_POST['film4'])) {
+    $films[] = $_POST['film4'];
+}
+
+if (isset($_POST['film5'])) {
+    $films[] = $_POST['film5'];
+}
+
+if (isset($_POST['film6'])) {
+    $films[] = $_POST['film6'];
+}
+
+if (isset($_POST['film7'])) {
+    $films[] = $_POST['film7'];
+}
+
 $liste_films = implode(", ", $films);
 
 
