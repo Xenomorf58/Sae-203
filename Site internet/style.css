@@ -521,3 +521,56 @@ h3 {
     color: gray;
 
 }
+
+/* ===== PAGE LOGIN ===== */
+
+#login-section {
+    padding: 8rem 1rem 6rem;
+    min-height: calc(100vh - 130px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: transparent;
+}
+
+.login-card {
+    width: min(560px, 100%);
+    background: rgba(16, 16, 32, 0.95);
+    border: 1px solid rgba(0, 255, 255, 0.18);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.18);
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+#login-section h1,
+#login-section h2 {
+    color: #ffffff;
+}
+
+#login-section label {
+    color: #d1f7ff;
+    font-weight: 500;
+}
+
+#login-section .form-control {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: white;
+}
+
+#login-section .form-control:focus {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #00ffff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.25);
+    color: white;
+}
+
+#login-section .btn-login {
+    width: 100%;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+#login-section .btn-login:hover {
+    transform: scale(1.02);
+}
