@@ -122,6 +122,18 @@ footer a:hover {
 
 }
 
+label {
+
+    padding-top: 5px;
+
+}
+
+section h2 {
+
+    margin-top: 80px;
+
+}
+
 footer.footer .active {
 
     background-image: url("https://i.pinimg.com/736x/fd/cd/2d/fdcd2d93de5c539ff196c34991a457ca.jpg");
@@ -157,7 +169,7 @@ footer img {
     margin-right: 40px;
 
     border-radius: 10px;
-    
+
     gap: 10px;
 
     text-align: center;
@@ -196,7 +208,10 @@ footer img {
 
     z-index: 1;
 
-    background: rgba(32, 32, 48, 0.395);
+
+    background: rgba(16, 16, 32, 0.95);
+    border: 1px solid rgba(0, 255, 255, 0.18);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.18);
 
     padding: 30px 50px;
 
@@ -235,8 +250,9 @@ footer img {
     padding: 12px;
     padding-right: 300px;
 
-    background: rgba(30, 30, 50, 0.8);
-    border: 2px solid transparent;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: white;
     border-radius: 15px;
     color: white;
 
@@ -256,8 +272,9 @@ footer img {
     padding: 12px;
     padding-right: 300px;
 
-    background: rgba(30, 30, 50, 0.8);
-    border: 2px solid transparent;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: white;
     border-radius: 10px;
     color: white;
 
@@ -516,7 +533,7 @@ h3 {
 
     font-size: 1rem;
 
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
     color: gray;
 
@@ -572,5 +589,11 @@ h3 {
 }
 
 #login-section .btn-login:hover {
+
     transform: scale(1.02);
+
+    background: rgba(30, 30, 50, 0.95);
+    border-color: #00FFFF;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), inset 0 0 10px rgba(0, 255, 255, 0.1);
+
 }
