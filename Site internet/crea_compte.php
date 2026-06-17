@@ -1,9 +1,9 @@
 <?php
 
-$servername = "localhost";
-$username_db = "root";
-$password_db = "";
-$dbname = "test";
+$servername = "webmmi-peda.iut-tarbes.fr";
+$username_db = "725cobont";
+$password_db = "HNTJqr88TmVH";
+$dbname = "725cobont_groupe_2_sae_203";
 
 // Partie connexion
 $conn = mysqli_connect($servername, $username_db, $password_db, $dbname);
@@ -19,8 +19,8 @@ $password = $_POST['new_password'];
 $password2 = sha1($password);
 
 // Requête SQL
-$sql = "INSERT INTO comptes (username, password)
-        VALUES ('$username', '$password2')";
+$sql = "INSERT INTO user (username, mdp) VALUES ('$username', '$password2')";
+//$sql = "ALTER TABLE user MODIFY id_user INT NOT NULL AUTO_INCREMENT";
 
 // Exécution SQL
 if (mysqli_query($conn, $sql)) {
