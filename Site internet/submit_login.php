@@ -1,12 +1,13 @@
 <?php
 
-$conn = mysqli_connect("localhost", "root", "", "test");
+$conn = mysqli_connect("webmmi-peda.iut-tarbes.fr", "725cobont", "HNTJqr88TmVH", "725cobont_groupe_2_sae_203");
+
 
 if (!$conn) {
     die("Erreur de connexion : " . mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM comptes WHERE username = ?";
+$sql = "SELECT * FROM user WHERE username = ?";
 
 $stmt = mysqli_prepare($conn, $sql);
 
@@ -22,7 +23,7 @@ if ($stmt) {
 
     $passwordHash = sha1($_POST['password']);
 
-    if ($user && $passwordHash === $user['password']) {
+    if ($user && $passwordHash === $user['mdp']) {
         header("Location: https://angusnicneven.com/");
         exit;
     } else {
