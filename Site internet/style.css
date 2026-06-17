@@ -27,16 +27,11 @@ ul {
 
 h1 {
 
-    margin-bottom: 1.5rem;
+    margin-bottom: 4rem;
 
 }
 
-h2 {
 
-    margin-bottom: 1.25rem;
-    letter-spacing: 0.02em;
-
-}
 
 /*----*/
 
@@ -45,9 +40,10 @@ figure {
     max-width: 680px;
     margin: 0 auto 2rem;
     padding: 1.2rem 1.4rem;
-    background: rgba(255, 255, 255, 0.06);
-    border-radius: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(30, 30, 50, 0.95);
+    border-color: #00FFFF;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), inset 0 0 10px rgba(0, 255, 255, 0.1);
+    border-radius: 10px;
 
 }
 
@@ -142,6 +138,38 @@ footer.footer .btn:hover {
 
 footer i {
     font-size: 1.5rem;
+}
+
+footer img {
+    max-height: 3rem;
+    width: auto;
+    display: block;
+}
+
+#indexsoirée li {
+
+    background: rgba(30, 30, 50, 0.95);
+    border-color: #00FFFF;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), inset 0 0 10px rgba(0, 255, 255, 0.1);
+
+    padding: 40px 20px;
+
+    margin-right: 40px;
+
+    border-radius: 10px;
+    
+    gap: 10px;
+
+    text-align: center;
+
+    transition: all 0.3s ease;
+
+}
+
+#indexsoirée li:hover {
+
+    transform: scale(1.01);
+
 }
 
 /* ===== SECTION FORMULAIRE ===== */
@@ -426,13 +454,6 @@ h3 {
 
 }
 
-#soirée h3 {
-
-    padding-bottom: 20px;
-
-}
-
-
 
 #soirée input[type="checkbox"],
 #soirée input[type="radio"] {
@@ -486,5 +507,17 @@ h3 {
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), inset 0 0 10px rgba(0, 255, 255, 0.1);
 
     transform: scale(1.05);
+
+}
+
+#soirée p {
+
+    padding-bottom: 10px;
+
+    font-size: 1rem;
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    color: gray;
 
 }
