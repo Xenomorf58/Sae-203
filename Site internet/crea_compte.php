@@ -16,19 +16,19 @@ if (!$conn) {
 // Récup données formulaire
 $username = $_POST['new_username'];
 $password = $_POST['new_password'];
+$check = $_POST['check_password'];
 $password2 = sha1($password);
+
+if ($password != $check) {
+    die("Les mots de passe ne correspondent pas, veuillez réessayer.");
+}
 
 // Requête SQL
 $sql = "INSERT INTO user (username, mdp) VALUES ('$username', '$password2')";
-//$sql = "ALTER TABLE user MODIFY id_user INT NOT NULL AUTO_INCREMENT";
 
 // Exécution SQL
 if (mysqli_query($conn, $sql)) {
-    echo "Le compte a été créé avec succès.";
-    echo "Vous allez être redirigé vers la page de connexion, veuillez patienter.";
-
     sleep(3);
-
     header("Location: index.html");
     exit;
 } else {
