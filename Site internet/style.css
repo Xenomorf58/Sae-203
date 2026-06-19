@@ -608,6 +608,7 @@ h3 {
 
 .liste-2x li,
 .liste-films li,
+.liste-films .accordion-item,
 .liste-lieux li,
 .liste-soirees li {
 
@@ -622,10 +623,25 @@ h3 {
 
 .liste-2x li:hover,
 .liste-films li:hover,
+.liste-films .accordion-item:hover,
 .liste-lieux li:hover,
 .liste-soirees li:hover {
     transform: translateY(-2px);
     background: rgba(255, 255, 255, 0.1);
+}
+
+
+.liste-films span {
+    color: white;
+}
+
+.liste-films .accordion-item button {
+    padding: 0.9rem 1rem;
+    margin-bottom: 0.8rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .liste-soirees li h7 {
