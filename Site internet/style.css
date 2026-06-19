@@ -176,11 +176,26 @@ footer img {
 
     transition: all 0.3s ease;
 
+    color: white;
+
 }
 
 #indexsoirée li:hover {
 
     transform: scale(1.01);
+
+}
+
+#indexsoirée li h5 {
+
+    color: white;
+
+}
+
+#indexsoirée li p {
+
+    padding-top: 20px;
+    color: white;
 
 }
 
@@ -539,6 +554,99 @@ h3 {
 
 }
 
+/* ===== BACK-END LISTE FILMS ===== */
+.corps-de-page {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px 120px;
+
+    box-sizing: border-box;
+
+    color: white;
+
+    gap: 12rem;
+
+}
+
+.liste-2x,
+.liste-films,
+.liste-lieux,
+.liste-soirees {
+    width: min(1000px, 95%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    background: rgba(30, 30, 50, 0.95);
+    border: 1px solid rgba(0, 255, 255, 0.18);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), inset 0 0 20px rgba(0, 255, 255, 0.1);
+}
+
+.liste-2x h2,
+.liste-films h2,
+.liste-lieux h2,
+.liste-soirees h2 {
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.liste-2x ul,
+.liste-films ul,
+.liste-lieux ul,
+.liste-soirees ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.liste-2x li,
+.liste-films li,
+.liste-lieux li,
+.liste-soirees li {
+
+    padding: 0.9rem 1rem;
+    margin-bottom: 0.8rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: transform 0.2s ease, background 0.2s ease;
+
+}
+
+.liste-2x li:hover,
+.liste-films li:hover,
+.liste-lieux li:hover,
+.liste-soirees li:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.liste-soirees li h7 {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+    color: #00FFFF;
+}
+
+.liste-soirees li p {
+    margin: 0;
+    color: #d1f7ff;
+    line-height: 1.6;
+}
+
+li a {
+
+    text-decoration: none;
+    color: white;
+}
+
 /* ===== PAGE LOGIN ===== */
 
 #login-section {
@@ -596,4 +704,15 @@ h3 {
     border-color: #00FFFF;
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), inset 0 0 10px rgba(0, 255, 255, 0.1);
 
+}
+
+/* ==== Toggler menu visible sur petit écran ==== */
+
+.navbar-toggler {
+    background: url("https://i.pinimg.com/736x/fd/cd/2d/fdcd2d93de5c539ff196c34991a457ca.jpg") center/cover;
+    z-index: 1050;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.95)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
