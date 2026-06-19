@@ -318,9 +318,88 @@ footer img {
 
     margin-bottom: 25px;
     resize: vertical;
-    min-height: 80px;
+}
+
+.vote-page {
+
+    padding-top: 130px;
+    min-height: 100vh;
 
 }
+
+.vote-container {
+
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px 120px;
+
+}
+
+.vote-card {
+
+    width: 100%;
+    max-width: 780px;
+    background: rgba(16, 16, 32, 0.95);
+    border: 1px solid rgba(0, 255, 255, 0.18);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.18);
+    border-radius: 20px;
+    padding: 30px 32px;
+
+}
+
+.vote-card h1 {
+
+    color: #fff;
+    margin-bottom: 24px;
+    font-size: 2.2rem;
+
+}
+
+.vote-card p {
+
+    color: #cfd8dc;
+
+}
+
+.vote-form .form-check {
+
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+}
+
+.vote-form .form-check:last-child {
+
+    border-bottom: none;
+
+}
+
+.vote-form h3 {
+
+    color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+
+}
+
+.vote-check label {
+
+    color: #fff;
+
+}
+
+.vote-check input {
+
+    display: flex;
+
+}
+
+.alert {
+    
+    margin-top: 16px;
+    min-height: 80px;
+}
+
 
 /* Bouton Envoyer */
 .formulaire button {
@@ -732,3 +811,7 @@ li a {
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.95)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+
+
+
+/* ==== Toggler menu visible sur petit écran ==== */
