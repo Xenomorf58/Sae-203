@@ -1,6 +1,4 @@
 <?php
-
-
 //PARTIE CONNEXION / CHECK CONNEXION
 $servername = "webmmi-peda.iut-tarbes.fr";
 $username_db = "725cobont";
@@ -15,24 +13,23 @@ if (!$conn) {
 
 
 //PARTIE CHOIX NOM SOIREE
-$nom_soirée = $_POST['nom_soiree'] ?? '';
+$nom_soirée = mysqli_real_escape_string($conn, $_POST['nom_soiree'] ?? '');
 
 
 //PARTIE CHOIX DATE
-$date = $_POST['date'] ?? '';
+$date = mysqli_real_escape_string($conn, $_POST['date'] ?? '');
 
 
 //PARTIE CHOIX THEME
-$theme = $_POST['theme'] ?? '';
-
+$theme = mysqli_real_escape_string($conn, $_POST['theme'] ?? '');
 
 
 //PARTIE CHOIX FILMS
 $films = $_POST['films'] ?? [];
 
+
 //PARTIE CHOIX LIEUX
 $lieux = $_POST['lieux'] ?? [];
-
 
 
 // PARTIE INSERT SOIRÉE
@@ -59,7 +56,6 @@ foreach ($lieux as $id_lieu) {
     $sql_lieu = "INSERT INTO soirée_lieu (id_soirée, id_lieu) VALUES ($id_soiree, $id_lieu)";
     mysqli_query($conn, $sql_lieu);
 }
-
 
 mysqli_close($conn);
 header("Location: index.html");
